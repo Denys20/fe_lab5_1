@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk"> 
+    <head>
+        <title>Хропост Д.С., ІК-02, лаб 5, варіант 19 </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Мова розмітки HTML-5" />
+        <meta name="description" content="HTML, Git, розмітка" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="task1">        
+            <div id="container">
+                <h2>Форма для заповнення</h2>
+                <form id="form">
+                    <div class="form_field">
+                        <input type="text" id="name" maxlength="32" placeholder="ПІБ"
+                    </div>
+                    <div class="form_field">
+                        <input type="text" id="id_card" maxlength="10" placeholder="ID-card"
+                    </div>
+                    <div class="form_field">
+                        <input type="text" id="fname" maxlength="4" placeholder="Факультет"
+                    </div>
+                    <div class="form_field">
+                        <input type="text" id="birthday" maxlength="10" placeholder="Дата народження"
+                    </div>
+                    <div class="form_field">
+                        <input type="text" id="address" maxlength="32" placeholder="Адреса"
+                    </div>
+                    <div>
+                        <button type="button" id="button_confirm" onclick="checkValidationForm()" class="button_">Підтвердити</button>
+                    </div>                    
+                </form>            
+            </div>
+            <div id="inform">
+                <h3>Введені дані:</h3>
+                <p><b>ПІБ:</b> <span id="inf_name"></span></p>
+                <p><b>ID-card:</b> <span id="inf_id_card"></span></p>
+                <p><b>Факультет:</b> <span id="inf_fname"></span></p>
+                <p><b>Дата народження:</b> <span id="inf_birthday"></span></p>
+                <p><b>Адреса:</b> <span id="inf_address"></span></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
